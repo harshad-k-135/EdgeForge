@@ -1,0 +1,16 @@
+# Ignore generated files; keep the README, scripts, and evaluation reports.
+/*
+!/.gitignore
+!/README.md
+!/scripts/
+!/results/
+
+# Keep scripts, but exclude generated Python files and OS metadata.
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# Allow traversal of results directories; keep only evaluation reports.
+/results/**
+!/results/**/
+!/results/**/evaluation_report.md
